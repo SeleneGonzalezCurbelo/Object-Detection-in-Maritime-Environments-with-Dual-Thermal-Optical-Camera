@@ -1,0 +1,7 @@
+name: blended_opencv
+dependencies:
+- python=3.11.5
+- pip:
+  - numpy==2.0.0
+  - opencv-python=4.10.0.84
+  - blend-modes=2.1.0
