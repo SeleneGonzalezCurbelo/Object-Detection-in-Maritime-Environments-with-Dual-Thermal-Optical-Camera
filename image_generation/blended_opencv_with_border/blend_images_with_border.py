@@ -11,9 +11,9 @@ def display_image(image, window_name='Image'):
     """
     Display an image in a new window until a key is pressed.
 
-    Parameters:
-    - image (numpy array): Image to display.
-    - window_name (str): Name of the window.
+    Args:
+        image (numpy array): Image to display.
+        window_name (str): Name of the window.
     """
     cv.namedWindow(window_name, cv.WINDOW_NORMAL)
     cv.imshow(window_name, image)
@@ -24,11 +24,11 @@ def load_image(image_path):
     """
     Load an image from disk.
 
-    Parameters:
-    - image_path (str): File path of the image.
+    Args:
+        image_path (str): File path of the image.
 
     Returns:
-    - Loaded image as numpy array if successful, None otherwise.
+        Loaded image as numpy array if successful, None otherwise.
     """
     image = cv.imread(image_path)
     if image is None:
@@ -39,12 +39,12 @@ def expand_with_neighbors(image, target_size):
     """
     Expand an image to fit within a target size by replicating borders.
 
-    Parameters:
-    - image (numpy array): Input image to be expanded.
-    - target_size (tuple): Desired size (width, height) to expand the image to.
+    Args:
+        image (numpy array): Input image to be expanded.
+        target_size (tuple): Desired size (width, height) to expand the image to.
 
     Returns:
-    - Resized image as numpy array with replicated borders.
+        Resized image as numpy array with replicated borders.
     """
     height, width = image.shape[:2]
 
@@ -68,7 +68,7 @@ def get_alpha_from_user():
     Prompt the user to enter an alpha value for blending, handling non-numeric inputs gracefully.
 
     Returns:
-    - float: Alpha value entered by the user.
+        float: Alpha value entered by the user.
     """
     while True:
         try:
@@ -84,11 +84,11 @@ def get_choice_from_user(prompt_text):
     """
     Prompt the user to enter a choice based on prompt_text, handling non-numeric inputs gracefully.
 
-    Parameters:
-    - prompt_text (str): Text to prompt the user with.
+    Args:
+        prompt_text (str): Text to prompt the user with.
 
     Returns:
-    - int: Choice entered by the user (0 or 1).
+        int: Choice entered by the user (0 or 1).
     """
     while True:
         try:
@@ -104,9 +104,9 @@ def blend_images_with_border(background_path, foreground_path):
     """
     Blend a foreground image onto a background image with user-defined alpha values.
 
-    Parameters:
-    - background_path (str): File path of the background image.
-    - foreground_path (str): File path of the foreground image.
+    Args:
+        background_path (str): File path of the background image.
+        foreground_path (str): File path of the foreground image.
     """
     # Load images
     background = load_image(background_path)

@@ -1,0 +1,5 @@
+name: superpotion_cut
+dependencies:
+- python=3.11.5
+- pip:
+  - pillow=10.4.0

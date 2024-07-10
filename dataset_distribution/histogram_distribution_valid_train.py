@@ -8,8 +8,8 @@ def calculate_color_histogram(image):
     """
     Calculate the color histogram of an image.
 
-    Parameters:
-    - image: numpy array representing the image.
+    Args:
+        image: numpy array representing the image.
 
     Returns:
     - hist: flattened numpy array representing the color histogram.
@@ -22,9 +22,9 @@ def resize_image(image, target_size):
     """
     Resize an image to the specified target size.
 
-    Parameters:
-    - image: numpy array representing the image.
-    - target_size: tuple representing the target size (width, height).
+    Args:
+        image: numpy array representing the image.
+        target_size: tuple representing the target size (width, height).
 
     Returns:
     - resized_image: numpy array representing the resized image.
@@ -37,9 +37,9 @@ def distribute_images(images_folder_path, labels_folder_path):
     """
     Distribute images into training and validation sets based on histogram distances.
 
-    Parameters:
-    - images_folder_path: path to the folder containing images.
-    - labels_folder_path: path to the folder containing labels.
+    Args:
+        images_folder_path: path to the folder containing images.
+        labels_folder_path: path to the folder containing labels.
 
     This function calculates color histograms for images, computes distances between them,
     and then copies them into respective training and validation folders.

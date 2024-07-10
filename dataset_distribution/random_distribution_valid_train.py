@@ -7,11 +7,11 @@ def split_data(source_dir, dest_dir, train_percent=0.7):
     Split data from a source directory into training and validation sets,
     copying corresponding images and label files to destination directories.
 
-    Parameters:
-    - source_dir (str): Path to the source directory containing 'images' and 'labels' subdirectories.
-    - dest_dir (str): Path to the destination directory where split data will be copied.
-    - train_percent (float): Percentage of data to allocate for training (default: 0.7).
-    - valid_percent (float): Percentage of data to allocate for validation (default: 0.3).
+    Args:
+        source_dir (str): Path to the source directory containing 'images' and 'labels' subdirectories.
+        dest_dir (str): Path to the destination directory where split data will be copied.
+        train_percent (float): Percentage of data to allocate for training (default: 0.7).
+        valid_percent (float): Percentage of data to allocate for validation (default: 0.3).
     """
     if not os.path.isdir(source_dir):
         print(f"Source directory '{source_dir}' does not exist.")
@@ -42,24 +42,27 @@ def split_data(source_dir, dest_dir, train_percent=0.7):
         """
         Copy image and label files corresponding to the specified subset ('train' or 'valid').
 
-        Parameters:
-        - files (list): List of file names to copy.
-        - subset (str): Subset ('train' or 'valid') where files will be copied.
+        Args:
+            files (list): List of file names to copy.
+            subset (str): Subset ('train' or 'valid') where files will be copied.
         """
         for file in files:
             if file.endswith('.jpg'):
-                image_src = os.path.join(source_dir, 'images', file)
+                image_src = os.path.join(source_dir, 'images', file).replace("\\", "/")
                 label_file = file[:-4] + '.txt'  
-                label_src = os.path.join(source_dir, 'labels', label_file)
+                label_src = os.path.join(source_dir, 'labels', label_file).replace("\\", "/")
 
-                shutil.copy(image_src, os.path.join(dest_dir, subset, 'images', file))
-                shutil.copy(label_src, os.path.join(dest_dir, subset, 'labels', label_file))
+                shutil.copy(image_src, os.path.join(dest_dir, subset, 'images', file)).replace("\\", "/")
+                shutil.copy(label_src, os.path.join(dest_dir, subset, 'labels', label_file)).replace("\\", "/")
 
     copy_files(train_files, 'train')
     copy_files(valid_files, 'valid')
 
-if __name__ == "__main__":
+def main():
     source_directory = 'source_directory'
     destination_directory = 'destination_directory'
 
     split_data(source_directory, destination_directory)
+
+if __name__ == "__main__":
+    main()
