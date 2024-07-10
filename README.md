@@ -35,7 +35,7 @@ To start working on the project, follow these steps:
 
 1. Clone the repository:
     ```bash
-   https://github.com/SeleneGonzalezCurbelo/Object-Detection-in-Maritime-Environments-with-Dual-Thermal-Optical-Camera.git
+   git clone https://github.com/SeleneGonzalezCurbelo/Object-Detection-in-Maritime-Environments-with-Dual-Thermal-Optical-Camera.git
    ```
 2. Open the project in your favorite development environment.
 3. Navigate to the corresponding folders and start working on the project. You can start by exploring the data in the Data folder or review the notebooks in Notebooks.
