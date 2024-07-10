@@ -32,19 +32,19 @@ Below you can see some examples of images captured in the Mirador environment, w
 
 Result of merging two images of the same size with `addWeighted()`.
 
-![Blended OpenCV Example](image_generation/blended_opencv/images/blending_openvc.jpg)
+<img src="image_generation/blended_opencv/images/blending_openvc.jpg" alt="Blended OpenCV Example" width="500"/>
 
 ### Blended OpenCV with Border
 
 The background shows the background image used, while the ship shows the object that is overlaid. The resulting image combines these elements using `addWeighted` after applying `cv2.copyMakeBorder()` to replicate the ship's border.
 
-![Blended OpenCV with Border Example](image_generation/blended_opencv_with_border/images/blended_opencv_with_border.jpg)
+<img src="image_generation/blended_opencv_with_border/images/blended_opencv_with_border.jpg" alt="Blended OpenCV with Border Example" width="500"/>
 
 ### Superposition Cut
 
 Composition results of images of ships on seabeds.
 
-![Superposition Cut Example](image_generation/superposition_cut/images/results_superposition_cut.jpg)
+<img src="image_generation/superposition_cut/images/results_superposition_cut.jpg" alt="Superposition Cut Example" width="500"/>
 
 ## Collaborators
 
