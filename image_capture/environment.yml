@@ -1,0 +1,8 @@
+name: get_images
+dependencies:
+- python=3.11.5
+- pip:
+  - onvif-zeep=0.2.12
+  - requests=2.31.0
+  - pillow=10.0.1
+  - lxml=5.1.0
