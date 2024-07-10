@@ -17,12 +17,14 @@ Welcome to the repository for the Final Degree Project on Object Detection in Ma
 In this repository, you will find a collection of code and images related to the object detection project in maritime environments using a dual thermal-optical camera. Each component is organized in its respective folder and may contain scripts or images necessary for the development and understanding of the project.
 
 ## Structure
-    - [dataset_distribution](https://github.com/mele13/Computer_Vision/tree/main/dataset_distribution): Scripts and tools to change labels and distribute datasets.
-    - [image_capture](https://github.com/mele13/Computer_Vision/tree/main/image_capture): Scripts and tools for capturing images with the dual camera.
-    - [image_generation](https://github.com/mele13/Computer_Vision/tree/main/image_generation): Scripts and tools for generating synthetic images.
-        - [blended_opencv](https://github.com/mele13/Computer_Vision/tree/main/image_generation/blended_opencv): Images mixed using `cv2.addWeighted()`.
-        - [blended_opencv_with_border](https://github.com/mele13/Computer_Vision/tree/main/image_generation/blended_opencv_with_border): Images mixed using `cv2.addWeighted()` and `cv2.copyMakeBorder()`.
-        - [superposition_cut](https://github.com/mele13/Computer_Vision/tree/main/image_generation/superposition_cut): Tools for superimposing foreground images (cutouts) onto specific backgrounds.
+
+- [dataset_distribution](https://github.com/mele13/Computer_Vision/tree/main/dataset_distribution): Scripts and tools to change labels and distribute datasets.
+- [image_capture](https://github.com/mele13/Computer_Vision/tree/main/image_capture): Scripts and tools for capturing images with the dual camera.
+- [image_generation](https://github.com/mele13/Computer_Vision/tree/main/image_generation): Scripts and tools for generating synthetic images.
+  - [blended_opencv](https://github.com/mele13/Computer_Vision/tree/main/image_generation/blended_opencv): Images mixed using `cv2.addWeighted()`.
+  - [blended_opencv_with_border](https://github.com/mele13/Computer_Vision/tree/main/image_generation/blended_opencv_with_border): Images mixed using `cv2.addWeighted()` and `cv2.copyMakeBorder()`.
+  - [superposition_cut](https://github.com/mele13/Computer_Vision/tree/main/image_generation/superposition_cut): Tools for superimposing foreground images (cutouts) onto specific backgrounds.
+
 
 
 ## Collaborators
