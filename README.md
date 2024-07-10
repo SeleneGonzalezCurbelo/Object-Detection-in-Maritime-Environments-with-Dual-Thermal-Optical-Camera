@@ -7,6 +7,10 @@ Welcome to the repository for the Final Degree Project on Object Detection in Ma
 - [Object Detection in Maritime Environments with Dual Thermal Optical Camera](#object-detection-in-maritime-environments-with-dual-thermal-optical-camera)
     - [About This Repository](#about-this-repository)
     - [Structure](#structure)
+        - Image Capture(#image-capture)
+        - Blended OpenCV(#blended-opencv)
+        - Blended OpenCV with Border(#blended-opencv-with-border)
+        - Superposition Cut(#superposition-cut)
     - [Collaborators](#collaborators)
     - [How to start](#how-to-start)
     - [Contribute](#contribute)
@@ -24,6 +28,29 @@ In this repository, you will find a collection of code and images related to the
         - [blended_opencv_with_border](https://github.com/mele13/Computer_Vision/tree/main/image_generation/blended_opencv_with_border): Images mixed using `cv2.addWeighted()` and `cv2.copyMakeBorder()`.
         - [superposition_cut](https://github.com/mele13/Computer_Vision/tree/main/image_generation/superposition_cut): Tools for superimposing foreground images (cutouts) onto specific backgrounds.
 
+### Image Capture
+
+Below you can see some examples of images captured in the Mirador environment, with the corresponding code.
+
+![Image Capture Example](image_capture/images/mirador.jpg)
+
+### Blended OpenCV
+
+Result of merging two images of the same size with `addWeighted()`.
+
+![Blended OpenCV Example](image_generation/blended_opencv/images/blending_openvc.jpg)
+
+### Blended OpenCV with Border
+
+The background shows the background image used, while the ship shows the object that is overlaid. The resulting image combines these elements using `addWeighted` after applying `cv2.copyMakeBorder()` to replicate the ship's border.
+
+![Blended OpenCV with Border Example](image_generation/blended_opencv_with_border/images/blended_opencv_with_border.jpg)
+
+### Superposition Cut
+
+Composition results of images of ships on seabeds.
+
+![Superposition Cut Example](image_generation/superposition_cut/images/results_superposition_cut.jpg)
 
 ## Collaborators
 
