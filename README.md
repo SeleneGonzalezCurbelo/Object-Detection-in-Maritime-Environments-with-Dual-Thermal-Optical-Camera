@@ -7,10 +7,10 @@ Welcome to the repository for the Final Degree Project on Object Detection in Ma
 - [Object Detection in Maritime Environments with Dual Thermal Optical Camera](#object-detection-in-maritime-environments-with-dual-thermal-optical-camera)
     - [About This Repository](#about-this-repository)
     - [Structure](#structure)
-        - Image Capture(#image-capture)
-        - Blended OpenCV(#blended-opencv)
-        - Blended OpenCV with Border(#blended-opencv-with-border)
-        - Superposition Cut(#superposition-cut)
+        - [Image Capture](#image-capture)
+        - [Blended OpenCV](#blended-opencv)
+        - [Blended OpenCV with Border](#blended-opencv-with-border)
+        - [Superposition Cut](#superposition-cut)
     - [Collaborators](#collaborators)
     - [How to start](#how-to-start)
     - [Contribute](#contribute)
@@ -26,7 +26,7 @@ In this repository, you will find a collection of code and images related to the
 
 Below you can see some examples of images captured in the Mirador environment, with the corresponding code.
 
-![Image Capture Example](image_capture/images/mirador.jpg)
+<img src="image_capture/images/mirador.jpg" alt="Image Capture Example" width="500"/>
 
 ### Blended OpenCV
 
