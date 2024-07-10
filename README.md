@@ -18,14 +18,12 @@ In this repository, you will find a collection of code and images related to the
 
 ## Structure
 
-- [dataset_distribution](https://github.com/mele13/Computer_Vision/tree/main/dataset_distribution): Scripts and tools to change labels and distribute datasets.
-- [image_capture](https://github.com/mele13/Computer_Vision/tree/main/image_capture): Scripts and tools for capturing images with the dual camera.
-- [image_generation](https://github.com/mele13/Computer_Vision/tree/main/image_generation): Scripts and tools for generating synthetic images.
-  - [blended_opencv](https://github.com/mele13/Computer_Vision/tree/main/image_generation/blended_opencv): Images mixed using `cv2.addWeighted()`.
-  - [blended_opencv_with_border](https://github.com/mele13/Computer_Vision/tree/main/image_generation/blended_opencv_with_border): Images mixed using `cv2.addWeighted()` and `cv2.copyMakeBorder()`.
-  - [superposition_cut](https://github.com/mele13/Computer_Vision/tree/main/image_generation/superposition_cut): Tools for superimposing foreground images (cutouts) onto specific backgrounds.
-
-
+- [dataset_distribution](https://github.com/SeleneGonzalezCurbelo/Object-Detection-in-Maritime-Environments-with-Dual-Thermal-Optical-Camera/tree/main/dataset_distribution): Scripts and tools to change labels and distribute datasets.
+- [image_capture](https://github.com/SeleneGonzalezCurbelo/Object-Detection-in-Maritime-Environments-with-Dual-Thermal-Optical-Camera/tree/main/image_capture): Scripts and tools for capturing images with the dual camera.
+- [image_generation](https://github.com/SeleneGonzalezCurbelo/Object-Detection-in-Maritime-Environments-with-Dual-Thermal-Optical-Camera/tree/main/image_generation): Scripts and tools for generating synthetic images.
+  - [blended_opencv](https://github.com/SeleneGonzalezCurbelo/Object-Detection-in-Maritime-Environments-with-Dual-Thermal-Optical-Camera/tree/main/image_generation/blended_opencv): Images mixed using `cv2.addWeighted()`.
+  - [blended_opencv_with_border](https://github.com/SeleneGonzalezCurbelo/Object-Detection-in-Maritime-Environments-with-Dual-Thermal-Optical-Camera/tree/main/image_generation/blended_opencv_with_border): Images mixed using `cv2.addWeighted()` and `cv2.copyMakeBorder()`.
+  - [superposition_cut](https://github.com/SeleneGonzalezCurbelo/Object-Detection-in-Maritime-Environments-with-Dual-Thermal-Optical-Camera/tree/main/image_generation/superposition_cut): Tools for superimposing foreground images (cutouts) onto specific backgrounds.
 
 ## Collaborators
 
